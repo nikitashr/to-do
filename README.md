@@ -17,3 +17,6 @@ The structure of the URLS
     
     e. /todos/1/finish
     Mark todo as finished
+    
+    f. /todos/1/undo_finish
+    Mark todo as unfinished
