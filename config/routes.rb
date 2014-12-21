@@ -1,4 +1,32 @@
 Rails.application.routes.draw do
+  get 'tasks/index'
+
+  get 'tasks/new'
+
+  get 'tasks/edit'
+
+  get 'tasks/create'
+
+  get 'tasks/update'
+
+  get 'tasks/finish'
+
+  get 'tasks/undo_finish'
+
+  get 'task/index'
+
+  get 'task/new'
+
+  get 'task/edit'
+
+  get 'task/create'
+
+  get 'task/update'
+
+  get 'task/finish'
+
+  get 'task/undo_finish'
+
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -6,17 +6,17 @@ The structure of the URLS
     a. root
     Lists all the todos in the system
     
-    b. /todos/new
+    b. /tasks/new
     For to create new todo
     
-    c. /todos/1
+    c. /tasks/1
     See the todo 1
     
-    d. /todos/1/{edit, destroy}
+    d. /tasks/1/{edit, destroy}
     Edit or delete the todo
     
-    e. /todos/1/finish
+    e. /tasks/1/finish
     Mark todo as finished
     
-    f. /todos/1/undo_finish
+    f. /tasks/1/undo_finish
     Mark todo as unfinished
