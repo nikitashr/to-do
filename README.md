@@ -24,8 +24,11 @@ Application user should be
 6. Tests
 7. Scrum planning
  
-## [Tracker](https://trello.com/b/o2c8pJWu/todo-project-task-list)
+## Tracker
 
+https://trello.com/b/o2c8pJWu/todo-project-task-list
+
+## Routes
 The structure of the URLS
 
     a. root
