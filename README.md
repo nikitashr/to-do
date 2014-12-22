@@ -21,6 +21,10 @@ Application user should be
 3. Browser <--> Request to the server (HTTP level, learn how to use Chrome Debug Tools)
 4. Rails routes
 5. Views / Layouts
+6. Tests
+7. Scrum planning
+ 
+## [Tracker](https://trello.com/b/o2c8pJWu/todo-project-task-list)
 
 The structure of the URLS
 
