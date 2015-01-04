@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
   def index
+    @task = Task.find(params[:id])
   end
 
   def new
@@ -9,6 +10,10 @@ class TasksController < ApplicationController
   end
 
   def create
+    @task = Task.new(task_params)
+    
+    @task.save
+    redirect_to @task    
   end
 
   def update
@@ -19,4 +24,10 @@ class TasksController < ApplicationController
 
   def undo_finish
   end
+
+  private
+    def task_params
+      params.require(:task).permit(:title, :note)
+    end
+
 end
