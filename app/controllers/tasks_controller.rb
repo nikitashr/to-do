@@ -1,5 +1,8 @@
 class TasksController < ApplicationController
   def index
+  end
+
+  def show
     @task = Task.find(params[:id])
   end
 
@@ -29,5 +32,4 @@ class TasksController < ApplicationController
     def task_params
       params.require(:task).permit(:title, :note)
     end
-
 end
