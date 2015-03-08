@@ -1,13 +1,20 @@
-<h1>Tasks List</h1>
+<h3>To-Do List</h3>
 
 <table>
-  <tr>
-    <th>Title</th>
-  </tr>
- 
-  <% @tasks.each do |task| %>
-    <tr>
-      <td> <input type = "checkbox"> <%= task.title %> </td>     
-    </tr>
-  <% end %>
+ 	
+  	<% @tasks.each do |task| %>
+    	<tr>
+    		<td> <input type = "checkbox"> 
+       		<td><%= task.title %>:</td>
+      		<td><%= task.text %></td>
+      		<td><%= link_to 'Show', task_path(task) %></td>
+      		<td><%= link_to 'Edit', edit_task_path(task) %></td>
+      		<td><%= link_to 'Destroy', task_path(task),
+              		method: :delete,
+              		data: { confirm: 'Are you sure?' } %></td>
+    	</tr>
+  	<% end %>
+
 </table>
+
+<%= link_to 'Add New Task', new_task_path %>
